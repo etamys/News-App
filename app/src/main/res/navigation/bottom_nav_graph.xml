@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/Home">
+
+    <fragment
+        android:id="@+id/Empty"
+        android:name="com.example.myapplication.ui.fragments.EmptyFragment"
+        android:label="Empty"
+        tools:layout="@layout/fragment_empty" />
+    <fragment
+        android:id="@+id/Saved"
+        android:name="com.example.myapplication.ui.fragments.SavedFragmnent"
+        android:label="Saved"
+        tools:layout="@layout/fragment_saved_fragmnent" >
+        <argument
+            android:name="dataSaved"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_Saved_to_saveItem"
+            app:destination="@id/saveItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.example.myapplication.ui.fragments.HomeFragment"
+        android:label="fragment_home1"
+        tools:layout="@layout/fragment_home1" >
+        <argument
+            android:name="dataHome"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveItem"
+        android:name="com.example.myapplication.ui.fragments.SaveItem"
+        android:label="activity_save_item"
+        tools:layout="@layout/activity_save_item" />
+</navigation>

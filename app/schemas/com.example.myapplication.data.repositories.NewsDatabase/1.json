@@ -1,0 +1,166 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "3627ef85c87d20c0aed87b5ac2a94659",
+    "entities": [
+      {
+        "tableName": "NewsData",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `Content` TEXT NOT NULL, `Title` TEXT NOT NULL, `Image` TEXT NOT NULL, `Status` INTEGER NOT NULL, `favorite` INTEGER NOT NULL, `image_source_link` TEXT NOT NULL, `image_source_title` TEXT NOT NULL, `member_first_name` TEXT NOT NULL, `member_id` TEXT NOT NULL, `member_last_name` TEXT NOT NULL, `member_like` INTEGER NOT NULL, `member_profile_pic` TEXT NOT NULL, `member_username` TEXT NOT NULL, `news_id` TEXT NOT NULL, `news_publishdate` TEXT NOT NULL, `news_url` TEXT NOT NULL, `slug` TEXT NOT NULL, `tags` TEXT NOT NULL, `thumb_image` TEXT NOT NULL, `total_comment` TEXT NOT NULL, `total_like` TEXT NOT NULL, `total_views` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_content",
+            "columnName": "Content",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_title",
+            "columnName": "Title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_image",
+            "columnName": "Image",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "Status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image_source_link",
+            "columnName": "image_source_link",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image_source_title",
+            "columnName": "image_source_title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_first_name",
+            "columnName": "member_first_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_id",
+            "columnName": "member_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_last_name",
+            "columnName": "member_last_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_like",
+            "columnName": "member_like",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_profile_pic",
+            "columnName": "member_profile_pic",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "member_username",
+            "columnName": "member_username",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_id",
+            "columnName": "news_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_publishdate",
+            "columnName": "news_publishdate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "news_url",
+            "columnName": "news_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "slug",
+            "columnName": "slug",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tags",
+            "columnName": "tags",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumb_image",
+            "columnName": "thumb_image",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total_comment",
+            "columnName": "total_comment",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total_like",
+            "columnName": "total_like",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total_views",
+            "columnName": "total_views",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3627ef85c87d20c0aed87b5ac2a94659')"
+    ]
+  }
+}

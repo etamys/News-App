@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.SavedFragmnent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple"
+        android:layout_height="198dp"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/place_imgs"
+            android:src="@drawable/ic_launcher_background"
+            app:shapeAppearance="@style/round_img"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="New Delhi"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#000"
+            android:layout_below="@id/place_imgs"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1"
+            android:textSize="20sp"
+            android:layout_below="@id/place_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="avctivities"
+            android:layout_below="@id/place_name"
+            android:layout_toRightOf="@id/count"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000"/>
+            
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/place_imgs"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
